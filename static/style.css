@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Headings */
+h2 {
+    color: #007BFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input fields */
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Focus state for input fields */
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Card styling for results */
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e3e6f0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.card-body p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Centering the text */
+.text-center {
+    text-align: center;
+}
+
+/* Footer style (if needed) */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #d1e7ff;
+}

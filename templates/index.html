@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lending Bias Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h2 class="text-center">Lending Bias Detection</h2>
+        <form action="/predict" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" name="age" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="annual_income">Annual Income</label>
+                    <input type="number" class="form-control" name="annual_income" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="credit_score">Credit Score</label>
+                    <input type="number" class="form-control" name="credit_score" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="loan_amount">Loan Amount</label>
+                    <input type="number" class="form-control" name="loan_amount" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label for="loan_duration">Loan Duration (years)</label>
+                    <input type="number" class="form-control" name="loan_duration" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="interest_rate">Interest Rate</label>
+                    <input type="number" step="0.01" class="form-control" name="interest_rate" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="marital_status">Marital Status</label>
+                    <select class="form-control" name="marital_status" required>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="race">Race</label>
+                    <select class="form-control" name="race" required>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                        <option value="Asian">Asian</option>
+                        <option value="Hispanic">Hispanic</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <label for="loan_type">Loan Type</label>
+                    <select class="form-control" name="loan_type" required>
+                        <option value="Personal Loan">Personal Loan</option>
+                        <option value="Home Loan">Home Loan</option>
+                        <option value="Car Loan">Car Loan</option>
+                        <option value="Education Loan">Education Loan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
